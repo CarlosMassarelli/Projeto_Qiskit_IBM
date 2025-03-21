@@ -1,0 +1,10 @@
+from qiskit_ibm_runtime import QiskitRuntimeService
+
+service = QiskitRuntimeService(
+    channel='ibm_quantum',
+    instance='ibm-q/open/main',
+    token='11fc454910642d80245966dd1c3a5577cafaee16252a6bc902b2c10d8adc76685be825f26cf9095b6186ccc8ccbdb8ed0960e806e88f10c49ba25a3e0f0b0bda'
+)
+
+# Or save your credentials on disk.
+# QiskitRuntimeService.save_account(channel='ibm_quantum', instance='ibm-q/open/main', token='11fc454910642d80245966dd1c3a5577cafaee16252a6bc902b2c10d8adc76685be825f26cf9095b6186ccc8ccbdb8ed0960e806e88f10c49ba25a3e0f0b0bda')
